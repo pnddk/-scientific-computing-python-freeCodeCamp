@@ -40,7 +40,7 @@ def add_time(start, duration, day = None):
     if day:
         new_time += f", {days[(days.index(day.capitalize()) + num_days) % 7]}"
         
-    if num_days == 1: #and (result_hours % 24 >= 12 or result_hours % 24 == 0): 
+    if num_days == 1:  
         new_time += " (next day)"
     elif num_days != 0:
         new_time += f" ({num_days} days later)"
